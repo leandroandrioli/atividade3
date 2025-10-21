@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-image: url('../img/12.jpg');
+    background-size: cover;
+}
+
+#titulo1 {
+    text-align: center;
+    color: #c57361;
+    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    opacity: 0.7;
+    padding: 5px;
+}
+
+section h2 {
+background-color: aqua;
+text-align: center;
+}
+
+#voltar {
+    border-radius: 30px;
+    background-color: #479191;
+    padding: 35px;
+    font-family: arial; font-size: 20px;
+    padding-left: center;
+    padding-right: center;
+    color: white;
+    margin: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    opacity: 0.7;
+}
+
+#voltar a {
+    text-decoration: none;
+}
+
+#voltar:hover {
+    background-color: #d41464;
+    opacity: 1;
+}

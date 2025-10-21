@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylecad.css">
+    <title>Cadastro</title>
+</head>
+    <body>
+    <header>
+        <h1 id="titulo1">Seja Um Voluntário</h1>
+    </header>
+
+<section aria-labelledby="cadastroForm"></section>
+                <h2 id="titulo2">
+                    Informe seus dados
+                </h2>
+
+                <form id="cadastroForm" action="#" method="post" autocomplete="on"></form>
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+
+                        <label for="nome">Nome completo *</label>
+                        <input
+                            id="nome"
+                            name="nome"
+                            type="text"
+                            required
+                            minlength="3"
+                            autocomplete="name"
+                            placeholder="Seu nome completo"
+                        />
+
+                        <label for="email">E-mail *</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            required
+                            autocomplete="email"
+                            placeholder="exemplo@provedor.com"
+                        />
+
+                        <label for="cpf">CPF *</label>
+                        <input
+                            id="cpf"
+                            name="cpf"
+                            type="text"
+                            required
+                            inputmode="numeric"
+                            pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                            maxlength="14"
+                            placeholder="000.000.000-00"
+                            title="Formato: 000.000.000-00"
+                            aria-describedby="cpf-formato"
+                        />
+
+                        <small id="cpf-formato">Formato: 000.000.000-00</small>
+
+                        <label for="telefone">Telefone *</label>
+                        <input
+                            id="telefone"
+                            name="telefone"
+                            type="tel"
+                            required
+                            inputmode="tel"
+                            pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+                            maxlength="15"
+                            placeholder="(00) 00000-0000"
+                            title="Formato: (00) 00000-0000"
+                            aria-describedby="tel-formato"
+                        />
+
+                        <small id="tel-formato">Formato: (00) 00000-0000</small>
+
+                        <label for="dataNasc">Data de nascimento *</label>
+                        <input
+                            id="dataNasc"
+                            name="dataNasc"
+                            type="date"
+                            required
+                            autocomplete="bday"
+                        />
+                    </fieldset>
+
+                    <fieldset>
+
+                        <label for="cep">CEP *</label>
+                        <input
+                            id="cep"
+                            name="cep"
+                            type="text"
+                            required
+                            inputmode="numeric"
+                            pattern="\d{5}-\d{3}"
+                            maxlength="9"
+                            placeholder="00000-000"
+                            title="Formato: 00000-000"
+                            aria-describedby="cep-help"
+                        />
+
+                        <small id="cep-help">Formato: 00000-000</small>
+
+                        <label for="cidade">Cidade *</label>
+                        <input
+                            id="cidade"
+                            name="cidade"
+                            type="text"
+                            required
+                            autocomplete="address-level2"
+                        />
+
+                        <label for="estado">Estado *</label>
+                        <select
+                            id="estado"
+                            name="estado"
+                            required
+                            autocomplete="address-level1"
+                        >
+                            <option value="">Selecione o estado</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </fieldset>
+                    <p>
+                        <button type="submit">Enviar dados</button>
+                        <button type="reset">Limpar</button>
+                    </p>
+            <ul>
+                <li id="voltar">
+                    <a href="index.html">Voltar</a>
+                </li>
+            </ul>
+    </body>
+</html>
